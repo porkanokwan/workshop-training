@@ -1,0 +1,355 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Solway', serif, 'Times New Roman', Times, serif;
+}
+.introduction, .contact {
+    background-color: rgb(11, 11, 88);
+    padding: 0px 30px ;
+    color: white;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    color: #90e0ef;
+}
+.header ul {
+    list-style-type: none;
+    margin: 2.2em 0px;
+    padding: 0;
+    display: flex;
+}
+ul li {
+    font-size: 20px;
+    padding-right: 30px;
+}
+ul li:nth-child(5) {
+    padding-right: 0px;
+}
+.menu {
+    display: none;
+}
+.content {
+    display: flex;
+}
+.text {
+    margin: auto;
+}
+p ~ button {
+    background-color: #007ea7; 
+    border: 0px; 
+    border-radius: 5px;
+    padding: 15px;
+    font-weight: bold;
+    margin-top: 24px;
+    box-shadow: 5px 5px 5px grey;
+}
+p ~ button:hover {
+    cursor: pointer;
+}
+p ~ button:active {
+    cursor: pointer;
+    color: white;
+    background-color: #90e0ef;
+}
+.profile img {
+    width: 500px;
+    box-shadow: 10px 10px 15px rgb(145, 144, 144);
+}
+.aboutMe {
+    background-color: #0077b6;
+    padding: 0px 30px ;
+}
+.aboutMe h2 {
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+    font-size: 32px;
+}
+.description {
+    display: flex;
+    padding-bottom: 30px;
+}
+.aboutPic {
+    padding: 0px 0px 30px 30px;
+}
+.aboutPic img {
+    width: 500px;
+    box-shadow: 8px 8px 10px black;
+}
+.skills h2, .experience h2, .contact h2 {
+    margin: 0;
+    padding: 15px 30px 0px 30px;
+    text-align: center;
+    font-size: 32px;
+}
+.skills p, .experience p {
+    margin: 0;
+}
+.skills {
+    padding: 0px;
+    background-color: #00b4d8;
+}
+.groupSkills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 78vw;
+    margin: auto;
+    padding-bottom: 30px;
+}
+.groupSkills > div {
+    width: 21vw;
+    padding: 15px;
+    margin: 15px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #f5f5f5ae;
+}
+.groupSkills > div::before {
+    content: "";
+    opacity: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #f5f5f5ae;
+    border-radius: 5px;
+}     
+.groupSkills img {
+    width: 150px;
+    height: 150px;
+    padding: 10px 0px;
+}
+.groupSkills > div > .logo,p,h3 {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.logo {
+    width: 100%;
+    text-align: center;
+}
+.experience {
+    padding: 0px;
+    background-color: #90e0ef;
+}
+.boxExperience {
+    width: 1050px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 80px 152px;
+    justify-items: center;
+}
+.boxExperience > div {
+    background-color: #b388eb;
+    text-align: center;
+    padding: 35px 0px;
+    width: 500px;
+    border-radius: 8px;
+}
+.boxExperience p {
+    padding: 0px 15px;
+}
+.btnView {
+    text-align: center;
+    padding: 15px;
+}
+.btnView button {
+    width: 140px;
+    height: 50px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007ea7; 
+    border: 0;
+    border-radius: 5px;
+    color: white;
+}
+.btnView button:hover {
+    cursor: pointer;
+    background-color: #33cbe6;
+    color: black;
+    box-shadow: 5px 5px 8px grey;
+}
+.contact ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.contact ul li:nth-child(3) {
+    padding-bottom: 20px;
+}
+.contact p {
+    text-indent: 25px;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    font-size: 150%;
+}
+@media (max-width: 1199px) {
+    /* laptop */
+    .aboutPic {
+        align-self: center;
+    }
+    .groupSkills{
+        width: 80vw;
+    }
+    .groupSkills > div {
+        width: 20.5vw;
+    }
+    .boxExperience {
+        width: 95vw;
+        gap: 80px 195px;
+    }
+    .boxExperience > div {
+        width: 40vw;
+    }
+    .boxExperience > div > img {
+        width: 35vw;
+    }
+}
+@media (max-width: 1023px) {
+    /* Tablet */
+    .header ul {
+        display: none;
+    }
+    .menu {
+        display: flex;
+        margin: 2.2em 0px;
+        color: white;
+    }
+    .menu:hover {
+        cursor: pointer;
+    }
+    .profile img {
+        width: 50vw;
+        padding-left: 10px;
+    }
+    .text h3 {
+        font-size: 18px;
+    }
+    .text h1 {
+        font-size: 26px;
+    }
+    .description {
+        flex-direction: column;
+    }
+    .aboutPic {
+        padding: 15px 0px;
+    }
+    .aboutPic img{
+        width: 60vw;
+    }
+    .groupSkills {
+        width: 91vw;
+    }
+    .groupSkills > div {
+        width: 35vw;
+    }
+    .boxExperience {
+        width: 95vw;
+        gap: 4vw 10.85vw;
+    }
+    .boxExperience > div {
+        width: 40vw;
+    }
+    h4 > b {
+        font-size: 2.8vw;
+    }
+    ul li > span {
+        font-size: 18px;
+    }
+    ul li > p {
+        font-size: 16px;
+    }
+}
+@media (max-width: 639px) {
+    /* Mobile */
+    .header {
+        font-size: 3vw;
+    }
+    .menu {
+        margin: 1.75em 0px;
+    }
+    .menu i {
+        font-size: 5vw;
+    }
+    .profile img {
+        width: 40vw;
+        padding-left: 10px;
+    }
+    .text h3 {
+        font-size: 3vw;
+    }
+    .text h1 {
+        font-size: 5vw;
+    }
+    .text p {
+        font-size: 2.5vw;
+    }
+    p ~ button {
+        padding: 8px;
+        font-size: 8px;
+        margin-top: 1vw;
+    }
+    .aboutMe {
+        padding: 0px 10px;
+    }
+    .aboutMe h2, .skills h2, .experience h2, .contact h2  {
+        font-size: 6vw;
+        padding: 15px;
+    }
+    .description p {
+        font-size: 12px;
+    }
+    .aboutPic img {
+        width: 80vw;
+    }
+    .skills > p, .experience > p {
+        font-size: 10px;
+    }
+    .groupSkills {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .groupSkills > div {
+        width: 70vw;
+    }
+    .boxExperience {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 7vw;
+    }
+    .boxExperience > div {
+        width: 92vw;
+    }
+    .boxExperience > div > img {
+        width: 85vw;
+    }
+    .btnView button {
+        width: 100px;
+        height: 40px;
+        padding: 7px;
+        font-size: 12px;
+    }
+    ul li > span {
+        font-size: 16px;
+    }
+    ul li > p {
+        font-size: 12px;
+    }
+    .contact h3 {
+        font-size: 18px;
+    }
+}

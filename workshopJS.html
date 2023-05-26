@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+        padding: 20px;
+      }
+      .playerCard {
+        background: white;
+        padding: 20px;
+      }
+      .playerCard h2 {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="wes" href="https://google.com">google</a>
+    <form name="signup">
+      <input type="text" id="name" name="name" value="Wes Bos" />
+      <input type="text" id="email" name="email" value="a@gmail.com" />
+      <input required type="checkbox" id="agree" name="agree" /> I agree term
+      and condition
+      <textarea class="text"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+
+    <script src="./workshopJs.js"></script>
+  </body>
+</html>
